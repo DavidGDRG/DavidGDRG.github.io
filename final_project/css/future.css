@@ -1,0 +1,60 @@
+h1 {
+    text-align: center;
+    font-size: 2.5em;
+    margin: 0;
+
+}
+
+p {
+    font-size: 2em;
+}
+
+
+
+body {
+
+    display: grid;
+    grid-template-columns: 1fr 3fr 3fr;
+    grid-template-areas: "nav text1 img1"
+                         "nav img2 text2"
+                         "nav text3 text3";
+    grid-gap: 0.5%;
+   /* background-color: rgb(247, 255, 177);*/
+   background: linear-gradient( rgb(247, 255, 177), burlywood);
+    color: rgb(54, 2, 47);
+    font-weight: 600;
+
+
+
+}
+
+img {
+    width: 100%;
+    height: 100%;
+}
+
+#navbar {
+    grid-area: nav;
+    background: linear-gradient( darksalmon, indianred);
+    margin-bottom: 2%;
+    
+    
+}
+
+#navbar ul {
+    list-style: none;
+    padding: 0 20px 0 20px;
+}
+
+#navbar ul li {
+    border: 5px black solid;
+    padding-top: 70%;
+    text-align: center;
+    padding-bottom: 70%;
+
+}
+
+#navbar ul li a {
+    display: block;
+    font-size: 2em;
+}
